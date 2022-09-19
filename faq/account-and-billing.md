@@ -1,0 +1,19 @@
+---
+title: Account and Billing
+description: 
+category: docs
+---
+
+# Account and Billing
+
+## How do I access my account?
+
+You can access your account using a supported Web3 wallet and address. Currently, your address is only used for credentials and not used for billing. We support Metamask, Keplr Wallet (Cosmos), and Martian Wallet (Aptos).
+
+## How do I pay for my functions’ service fee?
+
+Currently, billing is disabled for the Private Alpha release. All function deployment is free with a 15min max execution time per invocation.
+
+## Where does the service fee go?
+
+Portions of the service fee will go to the Blockless treasury for network maintenance and development. The majority of the service fee will be given to the worker who provided the execution service.
