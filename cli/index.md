@@ -24,7 +24,7 @@ Using `wget`:
 $ sudo sh -c "wget https://raw.githubusercontent.com/txlabs/blockless-cli/main/download.sh -v -O download.sh; chmod +x download.sh; ./download.sh; rm -rf download.sh"
 ```
 
-To install on Windows, head over to the [releases page](https://github.com/txlabs/blockless-cli/releases) on Github and pick up the `x86` version of the CLI. Currently, Windows `ARM64` version is not supported.
+To install on Windows, head over to the [releases page](https://github.com/txlabs/blockless-cli/releases) on GitHub and pick up the `x86` version of the CLI. Currently, the Windows `ARM64` version is not supported.
 
 ## Basic Usage
 
@@ -34,7 +34,7 @@ Use the `bls` command from the root of a Function directory.
 $ bls
 ```
 
-Alternatively, you can also use the `bls` command and supplying a path to the root directory of the Function.
+Alternatively, you can also use the `bls` command and supply a path to the root directory of the Function.
 
 ```bash
 $ bls {path_to_project}
@@ -58,7 +58,7 @@ $ bls function --help
 
 ## Top Level Commands
 
-Use the `console` command to open the Blockless console in browser.
+Use the `console` command to open the Blockless console in a browser.
 
 ```bash
 $ bls console
@@ -107,13 +107,13 @@ Use the `uninstall` command to uninstall components.
 $ bls components uninstall localenv
 ```
 
-Use the `update` command command to update all installed components to the latest available version.
+Use the `update` command to update all installed components to the latest available version.
 
 ```bash
 $ bls components update
 ```
 
-Alternatively, you can use `update {component_id}` command to update specific component to the latest available version.
+Alternatively, you can use the `update {component_id}` command to update a specific component to the latest available version.
 
 ```bash
 $ bls components update localenv
@@ -144,7 +144,7 @@ $ bls function list
 Use the `init {p1} {p2}` command to initial a Function project. 
 
 `{p1}` is the required remote starter’s name field, for example, `assemblyscript`. Currently, we only support `assemblyscript`. Support for `tinygo`, `rust`, `c`, and `c++` will be updated shortly.
-`{p2}` is an optional field for project’s name. If not entered, a random name will be automatically generated.
+`{p2}` is an optional field for the project’s name. If not entered, a random name will be automatically generated.
 
 ```bash
 $ bls function init assemblyscript my-oracle
@@ -156,7 +156,7 @@ If `-n name` is supplied, the remote function will be invoked. If `-p path` is s
 
 If none of the two parameters is entered, the project in the current directory (`-p ./`) will be used by default. 
 
-In all cases, if there are no name or project found, an error will be thrown.
+In all cases, if there is no name or project found, an error will be thrown.
 
 ```bash
 $ bls function invoke -n my-oracle

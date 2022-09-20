@@ -36,7 +36,7 @@ if (stdin) {
 
 ## Passing Function Results
 
-If you need to pass your execution results to another function, you should return those results to `stdout`. This interface currently has a `1Mib` limit. If your returned results is larger than the `1024` bytes, only the first `1024` bytes will be transported over the P2P network. If this causes the message payload to be incomplete, the message may not be understood by the Network and may result in errors in your function workflow.
+If you need to pass your execution results to another function, you should return those results to `stdout`. This interface currently has a `1Mib` limit. If your returned results is larger than the `1024Kib`, only the first `1024Kib` will be transported over the P2P network. If this causes the message payload to be incomplete, the message may not be understood by the Network and may result in errors in your function workflow.
 
 Here's an example of returning a results object, with the value of `1000`:
 
