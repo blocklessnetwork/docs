@@ -5,180 +5,74 @@ category: docs
 ---
 
 # CLI
+The Blockless CLI is a command line tool that makes it easy to interact with the Blockless Network and build and manage your applications. With the Blockless CLI, you can connect to the network via your on-chain identity, construct a local worker environment with one click, and build, test, deploy, and monitor your projects in real time.
 
-Blockless gives you multiple ways to interact with and configure your Functions. With the command-line interface (CLI), you can interact with the Blockless network using a terminal or through an automated system, enabling you to retrieve logs, manage credentials, replicate your deployment environment locally, and more.
+# Installation
+With `curl`:
 
-This page contains a complete list of all Blockless CLI commands available.
-
-# Installing the CLI
-
-Using `curL`:
-
-```bash
-$ sudo sh -c "curl https://raw.githubusercontent.com/txlabs/blockless-cli/main/download.sh | bash"
+```sh
+sudo sh -c "curl https://raw.githubusercontent.com/BlocklessNetwork/cli/main/download.sh | bash"
 ```
 
-Using `wget`:
+Or with `wget`:
 
-```bash
-$ sudo sh -c "wget https://raw.githubusercontent.com/txlabs/blockless-cli/main/download.sh -v -O download.sh; chmod +x download.sh; ./download.sh; rm -rf download.sh"
+```sh
+sudo sh -c "wget https://raw.githubusercontent.com/BlocklessNetwork/cli/main/download.sh -v -O download.sh; chmod +x download.sh; ./download.sh; rm -rf download.sh"
 ```
 
-To install on Windows, head over to the [releases page](https://github.com/txlabs/blockless-cli/releases) on GitHub and pick up the `x86` version of the CLI. Currently, the Windows `ARM64` version is not supported.
+To install on Windows, go to the [releases page](https://github.com/blocklessnetwork/cli/releases) on GitHub and download the x86 version of the CLI. Currently, the Windows ARM64 version is not supported.
 
-## Basic Usage
+## Usage
 
-Use the `bls` command from the root of a Function directory. 
+To use the BLS CLI, open a terminal and run `bls` followed by the command you want to use. The command structure is as follows:
 
-```bash
-$ bls
+```sh
+bls [command] [subcommand]
 ```
 
-Alternatively, you can also use the `bls` command and supply a path to the root directory of the Function.
+For example, to connect to the Blockless Network, you can run the `bls login` command:
 
-```bash
-$ bls {path_to_project}
+```sh
+bls login
 ```
 
 ## Help
 
-The `--help` option, shorthand `-h`, can be used to display more information about Blockless CLI commands. At the top level, you can also use `help` directly to display help content.
+To see a list of available commands, either run the `bls` command directly or run `bls` command with the `-h` or `--help` flag:
 
-```bash
-$ bls help
-$ bls --help
-$ bls -h
+```sh
+bls -h
 ```
 
-You can also use `--help`  option after any commands to display sub-commands or usage information. For example:
+You can also use `-h` or `--help` flag after any commands to display sub-commands or usage information. For example:
 
-```bash
-$ bls function --help
+```sh
+bls function -h
+```
+
+## Other Available Glboal Flags
+### `--yes` Flag
+You can use `-y` or `--yes` flag to set all options to the default value. For example:
+
+```sh
+bls function deploy -y
+```
+
+### Version Info
+You can use `-v` or `--version` flags to check the version information for the CLI:
+
+```sh
+bls -v
 ```
 
 ## Top Level Commands
+The Blockless CLI offers a variety of commands for managing your account, local components, and projects. For detailed CLI reference, please visit [Blockless CLI Reference]().
 
-Use the `console` command to open the Blockless console in a browser.
+Below is a list of commonly used commands:
 
-```bash
-$ bls console
-```
-
-Use the `login` command to connect your Web3 wallet. This command will open up your browser and direct you to link the wallet.
-
-```bash
-$ bls login
-```
-
-Use the `logout` command to disconnect your Web3 wallet.
-
-```bash
-$ bls disconnect
-```
-
-Use the `whoami` command to retrieve your user information and test your authentication configuration.
-```bash
-$ bls whoami
-```
-
-## Components
-
-Components are the installable parts of the Blockless CLI. A component can be a command-line tool (`bls`), a set of Blockless CLI commands at the Alpha or Beta release levels, or a package that contains dependencies used by a tool in the Blockless CLI (`localenv` ).
-
-The most commonly-used components are installed by default (`bls` and `localenv`). Other components are installed on-demand by the Blockless CLI when you run commands that require them.
-
-The `localenv` component is the local runtime environment consisting of one orchestrator and one worker for you to test your Function bundle locally. 
-
-Use the `list` command to display all currently available components.
-
-```bash
-$ bls components list
-```
-
-Use the `install` command to install components.
-
-```bash
-$ bls components install localenv
-```
-
-Use the `uninstall` command to uninstall components.
-
-```bash
-$ bls components uninstall localenv
-```
-
-Use the `update` command to update all installed components to the latest available version.
-
-```bash
-$ bls components update
-```
-
-Alternatively, you can use the `update {component_id}` command to update a specific component to the latest available version.
-
-```bash
-$ bls components update localenv
-```
-
-`info {component_id}` command is used to display specific component’s information.
-
-```bash
-$ bls components info localenv
-```
-
-Finally, use `config {component_id}` command to configure a specific component if available. 
-
-```bash
-$ bls components config localenv
-```
-
-## Functions
-
-The `function` command allow you to manage, test, and deploy your Blockless Functions using the Blockless CLI.
-
-Use the `function list` command to list both deployed and un-deployed functions in your wallet account.
-
-```bash
-$ bls function list
-```
-
-Use the `init {p1} {p2}` command to initial a Function project. 
-
-`{p1}` is the required remote starter’s name field, for example, `assemblyscript`. Currently, we only support `assemblyscript`. Support for `tinygo`, `rust`, `c`, and `c++` will be updated shortly.
-`{p2}` is an optional field for the project’s name. If not entered, a random name will be automatically generated.
-
-```bash
-$ bls function init assemblyscript my-oracle
-```
-
-Use the `invoke <-n name | -p path>` command to invoke your remote or local function.
-
-If `-n name` is supplied, the remote function will be invoked. If `-p path` is supplied, then the project in the supplied path will be executed locally inside the `localenv`.
-
-If none of the two parameters is entered, the project in the current directory (`-p ./`) will be used by default. 
-
-In all cases, if there is no name or project found, an error will be thrown.
-
-```bash
-$ bls function invoke -n my-oracle
-$ bls function invoke -p ./
-```
-
-`deploy {project_path}`  command is used to deploy your Function to the Blockless network.
-
-`{project_path}` is an optional field for the project path. If the project path is not supplied, the current directory will be used by default. If no project is found in the directory, an error will be thrown.
-
-```bash
-$ bls function deploy ./
-```
-
-Use the `stop {target}` command to un-deploy the Function from the Blockless network. `{target}` is a mandatory field for the currently-deployed Function name on the Blockless network.
-
-```bash
-$ bls function stop my-oracle
-```
-
-Use the `delete {target}` command to un-deploy the Function from the Blockless network and remove the Function executable bundle from the storage (IPFS). `{target}` is a mandatory field for the currently-deployed Function name on the Blockless network.
-
-```bash
-$ bls function delete my-oracle
-```
+- `bls help`: Displays information and usage instructions for the BLS CLI and its available subcommands.
+- `bls console`: Opens the BLS console, a web-based interface for managing your deployments and projects on the Blockless network.
+- `bls login`: Authenticates and logs in to the Blockless network using your wallet keypair.
+- `bls whoami`: Shows information about your current identity on the Blockless network, including your public key.
+- `bls components`: Manages your local environment components, including the local worker agent and orchestrator agent.
+- `bls function`: Build, test, and manage your projects and functions.
