@@ -37,3 +37,24 @@ With **Optimistically Trusted Workers, Worker Pinning**, and off-chain consensus
 Currently, the security and decentralization of the orchestration process rely on identifying geographic and IP clustering of the Worker subnetwork. This way, we ensure that the Workers serving your application are not located predominantly in the same server cluster (e.g. the same AWS or Google Cloud data center) or geo-location.
 
 The core team of Blockless is actively monitoring additional attributes that can cause security and decentralization concerns. These attributes will be addressed vigilantly to ensure the overall security level of the network.
+
+## What kind of development practices are followed internally within the team? 
+
+We utilize Lean Six Sigma principles (LSS) for agile development where it makes sense. Scrum, Backlog, and Prioritization. We utilize a Kanban system with a Kaizen feedback loop.
+
+Our priority cycle is 1 week, with a retarget every Monday. We utilize a more fluid structure for completing work as followed loosely by high-performant integrated teams. Work assignments, goals, and targets are fluid as we move from week to week.
+
+The development process starts with the dev team quoting to the product team based on the PRDs signed off and finishes with testing and deployment. Scrum metrics and KPIs are tracked by the dev team. Release metrics are tracked by the dev and product teams.
+
+## What applications and languages are used for development? 
+
+Rust is used for core runtime environment, app engine, and many of the first party extensions for the runtime. GoLang is used extensively to build the Orchestration Chain and the Worker Layer networks. We also used C to develop wrapper interfaces (dll) to different higher level languages for integration to the Runtime. JavaScript drives almost all user facing experiences, from the Web properties to the CLI. We also used Next JS and Storybook for frontend framework + component management.
+
+## Are there any single points of failure in the system (hard-coded values, private keys held centrally, dependency on a 3rd-party for core functionality)? 
+
+No private keys are stored. Our nodes generate new keys for the owner, those keys are retained by the owner. Under the current topology, the Orchestration Chain will be the identity and security layer for the Worker Layer and User interaction.
+
+## What are the benchmarks on transaction times, latencies, costs of transaction, throughput, etc.? 
+
+Currently, the average response time is around 20ms. Our Worker Layer’s networking module is based on libP2P, with our own stream configuration for our channels. This means that the network’s theoretical upper bound is libP2P’s performance upper bound. Here is some reading about the improvements overtime that have happened with libP2P streams. https://research.protocol.ai/blog/2020/honey-i-shrunk-our-libp2p-streams
+
