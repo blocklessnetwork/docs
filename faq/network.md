@@ -97,9 +97,11 @@ Easier
 A serverless model may be ideal for your application. If you need to swiftly deploy an application, serverless may be your best option. Instead of weeks or months, it is possible to launch an application within hours or days. The reason for this is that you do not need to worry about infrastructure. You may concentrate on the code and instantly release it. Scalability is automatic, and provisioning requirements are not a concern.
 
 Cheaper
+
 Going serverless is an excellent way to reduce costs. This is because you outsource the management of your servers, databases, and some logic. In addition to cost, serverless computing requires less processing power and fewer human resources. There is no need for you to establish your own server from scratch. Since serverless handles the infrastructure, you can concentrate on the important server-side code. Depending on your use case, there may be circumstances when the cost is not much lower.
 
 Better scalable
+
 If you want to become the next Google, you should examine if your server can take such a load. Choosing a serverless architecture enables you to be adaptable. If your software is successful and grows, it will be easy to make changes to keep up with the growth. Otherwise, no damage done! There is no need to create infrastructure before determining its need. 
 
 Lower latency
