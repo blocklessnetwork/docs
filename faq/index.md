@@ -6,6 +6,9 @@ category: docs
 
 # General
 
+## What is Blockless in one sentence?
+A WASM-based decentralized serverless function platform
+
 ## Why do you need Blockless?
 
 To build the next-generation decentralized applications, you need more than just a distributed blockchain ledger. Oftentimes, your application requires high-performance computation, data IO from/to IPFS, various blockchains, managed databases, and integration with various Web2 and Web3 services.
