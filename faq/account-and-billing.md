@@ -21,8 +21,12 @@ Portions of the service fee will go to the Blockless treasury for network mainte
 ## What is the business model?
 
 Here's an overview of the business model:
+
 Revenue = network usage fees paid by developer users
+
 90% of Revenue is to be distributed to node operators
 10% of Revenue is to be used to conduct token-burn
+
 Other forms of revenue incl. marketplace transaction fees - we allow users to share and publish their serverless functions with other users, and to token-gate or charge by usage. The platform will take a cut of a portion of their revenue.
+
 As a crypto-native project, our focus is to grow token demand to increase FDV. For web2 users and sponsors, we may accept fiat payment which will be part of the revenue reflected in the equity stakeholders' dividend payments.
