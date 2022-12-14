@@ -52,4 +52,4 @@ Going back to the Functions Overview page, we indeed confirm that our `my-first-
 
 ## Deploying Function with Blockless CLI
 
-Coming soon.
+See [detailed instructions](/docs/functions/deploy-with-cli).
