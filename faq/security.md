@@ -56,7 +56,7 @@ No private keys are stored. Our nodes generate new keys for the owner, those key
 
 ## What are the benchmarks on transaction times, latencies, costs of transaction, throughput, etc.? 
 
-Currently, the average response time is around 20ms. Our Worker Layer’s networking module is based on libP2P, with our own stream configuration for our channels. This means that the network’s theoretical upper bound is libP2P’s performance upper bound. Here is some reading about the improvements overtime that have happened with libP2P streams. https://research.protocol.ai/blog/2020/honey-i-shrunk-our-libp2p-streams
+Currently, the average response time is around 20ms. Our Worker Layer’s networking module is based on libP2P, with our own stream configuration for our channels. This means that the network’s theoretical upper bound is libP2P’s performance upper bound. Here is some reading about the improvements overtime that have happened with libP2P streams: https://research.protocol.ai/blog/2020/honey-i-shrunk-our-libp2p-streams
 
 ## What are Minimum Specification Considerations for Blockless?
 
