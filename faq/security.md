@@ -58,3 +58,26 @@ No private keys are stored. Our nodes generate new keys for the owner, those key
 
 Currently, the average response time is around 20ms. Our Worker Layer’s networking module is based on libP2P, with our own stream configuration for our channels. This means that the network’s theoretical upper bound is libP2P’s performance upper bound. Here is some reading about the improvements overtime that have happened with libP2P streams. https://research.protocol.ai/blog/2020/honey-i-shrunk-our-libp2p-streams
 
+## What are Minimum Specification Considerations for Blockless?
+
+**Blockchain Validator and Sentry Nodes**
+
+- When enabled CosmWasm will require the minimum validator configuration
+
+- CPU 3.5Ghz , Gen 5 Intel or later , High TDP 100W or greater
+
+- 64 GB DDR4
+
+- NVMe 2Tb of high speed (5000 MB/s write recommended)
+
+**Execution Network Head Node**
+- CPUs for Head Nodes are Currently not Subject to Benchmarking, so these specs can be a little lower while we work through Dev Net and Alpha
+- Minimum CPU 3.5Ghz (2 fulltime vCPUS) + 4 GB RAM HDD ~500Gb (we don’t have a perm storage option yet)
+
+**Execution network Worker Node**
+- Execution Worker Nodes Need more Memory than CPU to accomplish appropriate throughput for P2P communication and execution. It is recommended to have 2x the RAM as the CPU starting with 0.5 vCPU, you should have 1GB Ram.
+- HDD 500 Gb until perm storage.
+- A typical 4 Core Processor with Hyper-threading Yields 8vCPUs, and should have a minimum of 16Gb of RAM to ensure enough IO availability for processes running on that machine.
+- The worker will dynamically report back the amount of work that is available, based on the CPU scheduling.
+
+
