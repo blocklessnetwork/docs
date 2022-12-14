@@ -53,6 +53,22 @@ In addition, the system incorporates a Cosmos-based orchestration chain that han
 
 For developers and network contributors, the Blockless network can be accessed via both command line interface and graphical user interface, providing the best-in-class system interaction flow. The Node software can be automatically installed onto the host machine, without the user ever needing to decipher the CLI commands.
 
+## How big is the market need for Blockless’s solution?
+
+The market is valued at $870B. 
+
+To best estimate the market cap of decentralized off-chain execution, we take its centralized counterpart which is currently fulfilling the same technical need, cloud compute providers, as a reference data point. If we believe decentralization is the future, soon we will see decentralized execution throughput exceeding its centralized counterpart. Let’s take AWS alone as a benchmark. It’s currently valued at $1.5T. However, decentralized off-chain infra has a market cap of $52B, as of today. We further break down the off-chain infra market by segment- decentralized storage makes up 30%, while decentralized execution is 60%, with 10% representing the other in the category.  This entails an $870B market gap yet to close by the decentralized execution segment alone.
+
+## How difficult is it for Blockless to defend market share against new competitors?
+
+Blockless is an engineering-heavy project. We built our runtime, networking layer, CLI, SDK, app engine, etc. from scratch. 
+
+There are a few other players also focusing on decentralized general-purpose execution, each with its own distinct tech stack and product focus. Fluence network, Akash, Flux, just to name a few. But the aforementioned innovations make Blockless stand out. 
+
+## Is your business model sustainable?
+
+Our business model is based on usage. It is quite similar to a layer 1 in terms of the business model - node runners serve the platform, and developers use the platform. 
+
 ## Is Blockless cheaper than a centralized web service?
 
 Yes. Currently, Blockless’ service fee will be competitive with the centralized counterparts. As the network recruits more idle resources, the price will gradually go down even more as these resources have previously been neglected. 
@@ -64,6 +80,59 @@ Yes. BLS is the official token of the Blockless network. It will be used for all
 ## Wen token?
 
 The BLS token is already minted for internal testing. We will launch the token officially later this year during the Public Beta launch.
+
+## Explain the design of your token utility
+As we are a permissionless network, all nodes are required to stake our token so we can avoid DDOS attacks. The token is also used for service payments. 5% of all generated fees will be burnt. 
+
+As we are a community and ecosystem-centric platform, we will also have incubation and launchpad programs based on community voting.
+
+## Explain the design of your token supply
+
+The Blockless token (BLS) can be acquired by running a node to provide service. Nodes get payment based on how much work they’ve done (our runtime allows for CPU instruction level monitoring). 
+
+Regular nodes in the network can go on and offline at will, as we expect many of these nodes to be personal devices such as phones and laptops. 
+
+But if the node runner is confident that his device can provide stable service (has good internet, and if he is using our official miner or he has a server at home), the node runner can sign up for a bonus BLS token reward. But if the node goes offline during the contracted period, its stake will be slashed. 
+
+## Explain the design of your token demand
+
+All node runners are required to stake to join the network. All payments for execution services will be done with the BLS tokens. We also allow developers to share or even sell their WASM functions to others (with BLS).
+
+## What is the roadmap for Blockless?
+
+Q3 2022
+(a) Release of Blockless Functions Private Alpha
+(b) Release of Blockless Developer Console
+(c) Release of Blockless Command Line Interface (CLI)
+(d) Release of  Blockless SDK
+(e) Release ofV1 Developer Documentation
+(f) Product tests with 15 partners
+
+
+Q4 2022
+(a) Release of Blockless App Engine
+(b) Release of Blockless Site (dynamic web hosting)
+(c) Release of Blockless node software
+(d) Release of V1 Network Contributor Documentation
+(e) Launch of collaborative educational campaigns with partners 
+(f) Onboarding of initial dynamic web hosting clients
+
+
+Q1 2023
+(a) Release of Blockless Public Beta 
+(b) Release of GPU support
+(c) Release of zkWASM
+(d) Mass-onboarding of paying clients
+(e) Launch of Incentivized Testnet 
+(f) Become open-source
+
+
+EoY 2023
+Mainnet Launch 
+
+
+EoY 2024
+Decentralized Full Sevice Platform
 
 ## Where can I find more information?
 
