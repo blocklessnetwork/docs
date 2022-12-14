@@ -141,4 +141,4 @@ Decentralized Full Sevice Platform
 - [Telegram](https://t.me/blocklessofficial)
 - [Discord](https://discord.gg/9eeRHxSCTZ)
 - [Linkedin](https://www.linkedin.com/company/blockless)
-
+- [Mirror](https://mirror.xyz/0x4322b89aEd9ab7d2D4D3e6772B7c91765eba875B)
