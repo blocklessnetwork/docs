@@ -92,30 +92,30 @@ Teams experience a number of problems in this process:
 
 ## Why go serverless?
 
-Easier
+**Easier**
 
 A serverless model may be ideal for your application. If you need to swiftly deploy an application, serverless may be your best option. Instead of weeks or months, it is possible to launch an application within hours or days. The reason for this is that you do not need to worry about infrastructure. You may concentrate on the code and instantly release it. Scalability is automatic, and provisioning requirements are not a concern.
 
-Cheaper
+**Cheaper**
 
 Going serverless is an excellent way to reduce costs. This is because you outsource the management of your servers, databases, and some logic. In addition to cost, serverless computing requires less processing power and fewer human resources. There is no need for you to establish your own server from scratch. Since serverless handles the infrastructure, you can concentrate on the important server-side code. Depending on your use case, there may be circumstances when the cost is not much lower.
 
-Better scalable
+**Better scalable**
 
 If you want to become the next Google, you should examine if your server can take such a load. Choosing a serverless architecture enables you to be adaptable. If your software is successful and grows, it will be easy to make changes to keep up with the growth. Otherwise, no damage done! There is no need to create infrastructure before determining its need. 
 
-Lower latency
+**Lower latency**
 
 Typically, serverless systems have global access points. This implies it will be simpler to manage visitors from all around the globe. Thus, you may grow your application without sacrificing performance. Imagine, for example, that you host a server in the normal way on the West Coast. If a user from the East Coast uses your application, they must make a request across the full distance and back. For a serverless design, it would only reach the nearest serverless node, which may be on the West Coast! The only possible drawback is cold starts, which is the time required for an application to be created and deployed in a container.
 
-Sustainable
+**Sustainable**
 
 Companies that run their own data centers or servers must make sure that their servers are always up and running. Consider all the enormous data centers and the physical resources required to construct them. Consider the energy required to keep them operating. The advantage of serverless architecture is the ability to purchase servers on demand. This may lower the number of resources required to keep several businesses online.
 
-Flexible
+**Flexible**
 
 With serverless, it is simpler to begin the implementation of an application than with conventional approaches. Consequently, adopting serverless enables you to develop more rapidly. When you see instant, concrete results, you may go on to the next task. You may begin developing your next feature or microservice. This advantage is provided by serverless architecture when there are no limits. It is also simpler to pivot in circumstances requiring reorganization.
 
-More efficient
+**More efficient**
 
 A serverless design results in per-request billing. If you had a conventional server, you would always have it working. A serverless architecture charges only when the server is used. It is also more efficient since scalability is no longer an issue. Infrastructure, configuration, capacity planning, and DevOps no longer bother you.
