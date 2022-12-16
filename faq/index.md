@@ -100,38 +100,58 @@ All node runners are required to stake to join the network. All payments for exe
 
 ## What is the roadmap for Blockless?
 
-Q3 2022
+**Q3 2022**
+
 (a) Release of Blockless Functions Private Alpha
+
 (b) Release of Blockless Developer Console
+
 (c) Release of Blockless Command Line Interface (CLI)
+
 (d) Release of  Blockless SDK
+
 (e) Release ofV1 Developer Documentation
+
 (f) Product tests with 15 partners
 
 
-Q4 2022
+**Q4 2022**
+
 (a) Release of Blockless App Engine
+
 (b) Release of Blockless Site (dynamic web hosting)
+
 (c) Release of Blockless node software
+
 (d) Release of V1 Network Contributor Documentation
+
 (e) Launch of collaborative educational campaigns with partners 
+
 (f) Onboarding of initial dynamic web hosting clients
 
 
-Q1 2023
+**Q1 2023**
+
 (a) Release of Blockless Public Beta 
+
 (b) Release of GPU support
+
 (c) Release of zkWASM
+
 (d) Mass-onboarding of paying clients
+
 (e) Launch of Incentivized Testnet 
+
 (f) Become open-source
 
 
-EoY 2023
+**EoY 2023**
+
 Mainnet Launch 
 
 
-EoY 2024
+**EoY 2024**
+
 Decentralized Full Sevice Platform
 
 ## Where can I find more information?
