@@ -6,7 +6,7 @@ category: docs
 
 # Introduction to Blockless
 
-Blockless is a decentralized web service platform that is designed to serve as an execution layer within the modular Web3 ecosystem. Whether you're building blockchain oracles, Web3 indexers, NFT platforms, or any dApps that cannot be built on a blockchain alone, Blockless has the services to help you build decentralized applications with flexibility, scalability, and reliability.
+Blockless is a WASM-based, verifiable serverless platform. Whether you're building blockchain oracles, Web3 indexers, NFT platforms, or any dApps that cannot be built on a blockchain alone, Blockless has the services to help you build decentralized applications with flexibility, scalability, and reliability.
 
 ![Blockless in the Web Stack](/images/blockless-in-the-web-stack.png)
 
