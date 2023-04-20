@@ -1,4 +1,4 @@
-# Blockless **Task Distribution Algorithm**
+# Blockless Task Distribution Algorithm
 
 The algorithm employs a Greco-Latin square distribution approach to evenly distribute tasks across computers while respecting resource constraints. By arranging tasks in an n x n matrix, the algorithm ensures that each computer receives a balanced workload.
 
@@ -36,7 +36,7 @@ where each element m_ij is a list of tasks.Algorithm Application:
     
 5. Flatten the matrix and return the distributed tasks and queued tasks as a tuple.
 
-# **Task Distribution Flow Overview**
+# Task Distribution Flow Overview
 
 Distribution Diagram - this diagram shows how the list of tasks is distributed to the list of eligible computers.
 

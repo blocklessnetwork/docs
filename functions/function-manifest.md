@@ -70,11 +70,11 @@ permissions = [
 ]
 ```
 
-### **nodes `integer` `Optional`**
+### nodes `integer` `Optional`
 
 The `nodes` property is an optional integer that represents the number of nodes to be deployed for your function or site. If not provided, it defaults to `1`.
 
-### **permissions `array of strings` `Conditional`**
+### permissions `array of strings` `Conditional`
 
 The `permissions` property is an array of strings that represents the list of extension (and subsequent URL) your function or site is allowed to make requests to. This property is required only if your function or site makes external requests.
 

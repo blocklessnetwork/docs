@@ -1,4 +1,4 @@
-# **Execution Flow**
+# Execution Flow
 
 The execution flow is the process of how the distributed system executes the code across the different machines. There are different types of execution flow that developers can use, including:
 
@@ -12,9 +12,9 @@ sequential order.
 
 ● Sequential + Parallel: Sequentially execute methods on different machines, while some or all methods are horizontally scaled to be executed on multiple machines at the same time.
 
-## **Basic**
+## Basic
 
-### **Sequential:**
+### Sequential:
 
 Different methods to be executed on different workers in sequential order.
 
@@ -34,7 +34,7 @@ execution_flow: sequential;
 
 }
 
-### **Parallel:**
+### Parallel:
 
 Executing the same method on multiple workers at the same time.
 
@@ -54,9 +54,9 @@ min_worker_count: num; //if the network has redundant resources, then the networ
 
 }
 
-## **Extended**
+## Extended
 
-### **Sequential + Parallel**
+### Sequential + Parallel
 
 : Sequentially execute methods on different workers, while some or all methods are horizontally scaled to be executed on multiple workers at the same time.
 
@@ -82,7 +82,7 @@ min_worker_count: num;
 
 }
 
-### **Concurrent Execution**:
+### Concurrent Execution:
 
 Similar to Parallel Execution Flow, except that multiple methods will be executed on multiple workers at the same time.
 
