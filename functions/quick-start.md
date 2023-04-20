@@ -2,13 +2,7 @@
 
 This guide will walk you through logging in to the Blockless Network to deploying your first Function. 
 
-<aside>
-💡 **Try the Blockless Dashboard**
-The quickest way to experiment with Blockless Functions is through [the Blockless Dashboard](https://dashboard/blockless.network). The only thing you need is to link your Web3 wallet and GitHub account. After that, you can deploy a sample project to preview and test a Functions script immediately.
-
-</aside>
-
-## [](https://developers.cloudflare.com/workers/get-started/guide/#1-start-a-new-project-with-wrangler-the-workers-cli)1. Start a new project with the Blockless CLI
+## (https://developers.cloudflare.com/workers/get-started/guide/#1-start-a-new-project-with-wrangler-the-workers-cli)1. Start a new project with the Blockless CLI
 
 The Blockless command-line interface (CLI), allows you to create, test, and deploy your Functions projects.
 
@@ -88,6 +82,6 @@ $ bls function deploy
 
 You will be able to view your deployed function either via the `bls function list` command or via the Blockless Dashboard.
 
-## [](https://developers.cloudflare.com/workers/get-started/guide/#next-steps)Next steps
+## (https://developers.cloudflare.com/workers/get-started/guide/#next-steps)Next steps
 
 To do more with Blockless Functions, explore the [Tutorials](https://www.notion.so/functions-tutorials-f6e4a4469dee4d66bf02d05830ac360a).
