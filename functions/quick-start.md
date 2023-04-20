@@ -2,7 +2,7 @@
 
 This guide will walk you through logging in to the Blockless Network to deploying your first Function. 
 
-## (https://developers.cloudflare.com/workers/get-started/guide/#1-start-a-new-project-with-wrangler-the-workers-cli)1. Start a new project with the Blockless CLI
+## 1. Start a new project with the Blockless CLI
 
 The Blockless command-line interface (CLI), allows you to create, test, and deploy your Functions projects.
 
@@ -82,6 +82,6 @@ $ bls function deploy
 
 You will be able to view your deployed function either via the `bls function list` command or via the Blockless Dashboard.
 
-## (https://developers.cloudflare.com/workers/get-started/guide/#next-steps)Next steps
+## Next steps
 
 To do more with Blockless Functions, explore the [Tutorials](https://www.notion.so/functions-tutorials-f6e4a4469dee4d66bf02d05830ac360a).
