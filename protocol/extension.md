@@ -1,16 +1,16 @@
-# **Extensions in Blockless**
+# Extensions in Blockless
 
 WebAssembly (WASM) extensions are a set of APIs not included in the core WebAssembly specification. Instead, they are provided by the runtime environment where the WebAssembly module is executed. Extensions enable additional functionality, such as accessing platform-specific features, integrating with other programming languages or libraries, and more.
 
 In Blockless, extensions are considered safe by default, allowing node operators to download and execute them securely. Blockless also supports dynamic querying and enumeration of libraries, reducing administrative overhead and maintaining consistent performance.
 
-## **Features**
+## Features
 
-### **Dynamic Execution and Extension**
+### Dynamic Execution and Extension
 
 Blockless enables the runtime to query and enumerate available features, allowing dynamic execution of methods and feature querying. This functionality extends the Blockless compute network, providing more efficient and scalable solutions.
 
-### **Example: Redis Extension**
+### Example: Redis Extension
 
 The Redis extension for Blockless improves performance and scalability for applications and services built on the platform. It allows for more efficient storage and retrieval of data. Benefits of using the Redis extension include:
 

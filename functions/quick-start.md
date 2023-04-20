@@ -8,7 +8,7 @@ The quickest way to experiment with Blockless Functions is through [the Blockles
 
 </aside>
 
-## **[](https://developers.cloudflare.com/workers/get-started/guide/#1-start-a-new-project-with-wrangler-the-workers-cli)1. Start a new project with the Blockless CLI**
+## [](https://developers.cloudflare.com/workers/get-started/guide/#1-start-a-new-project-with-wrangler-the-workers-cli)1. Start a new project with the Blockless CLI
 
 The Blockless command-line interface (CLI), allows you to create, test, and deploy your Functions projects.
 
@@ -30,7 +30,7 @@ $ sudo sh -c "wget <https://raw.githubusercontent.com/BlocklessNetwork/cli/main/
 
 To install on Windows, go to the [releases page](https://github.com/blocklessnetwork/cli/releases) on GitHub and download the x86 version of the Blockless CLI. 
 
-### **Get familiar with Blockless Commands**
+### Get familiar with Blockless Commands
 
 To see a list of available commands, you can run the `bls` or `bls help` command:
 
@@ -78,7 +78,7 @@ $ bls function build
 
 To test your function, simply run the `bls function invoke` command. You will see your function result returned to the terminal after execution.
 
-## 3**. Deploy your project**
+## 3. Deploy your project
 
 With your project configured, you can now deploy your Function to the Blockless Network. 
 
@@ -88,6 +88,6 @@ $ bls function deploy
 
 You will be able to view your deployed function either via the `bls function list` command or via the Blockless Dashboard.
 
-## **[](https://developers.cloudflare.com/workers/get-started/guide/#next-steps)Next steps**
+## [](https://developers.cloudflare.com/workers/get-started/guide/#next-steps)Next steps
 
 To do more with Blockless Functions, explore the [Tutorials](https://www.notion.so/functions-tutorials-f6e4a4469dee4d66bf02d05830ac360a).

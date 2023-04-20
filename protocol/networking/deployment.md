@@ -4,13 +4,13 @@ Blockless incorporates a two-stage deployment process for assemblies onto a netw
 
 ## Two-Stage Deployment Process:
 
-### **Stage 1: Alerting the Network and Pre-Caching Distributable images**
+### Stage 1: Alerting the Network and Pre-Caching Distributable images
 
 1. Publish a deployment message (D_msg) to the GossipSub network, containing metadata about the assembly (A) and its distributable content (C).
 2. The network nodes receive the deployment message and decide whether to pre-cache the distributable content based on their resource availability and relevance.
 3. Nodes that choose to pre-cache the content will fetch it from the publisher or other nodes that have already cached it.
 
-### **Stage 2: Assembly Execution**
+### Stage 2: Assembly Execution
 
 Publish an execution message (E_msg) to the GossipSub network, containing instructions for executing the assembly.
 

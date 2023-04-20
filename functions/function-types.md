@@ -4,19 +4,19 @@ In general, a Function either exists in your account or can be published to Bloc
 
 Account Function and Marketplace Function do not interfere with each other, although they may be pointing to the same source WASI bundle.
 
-# **Account Function vs. Marketplace Function**
+# Account Function vs. Marketplace Function
 
 Account Functions and Marketplace Functions are separate entities. Updates to an Account Function won’t affect the published Marketplace Function, and vice versa.
 
 An Account Function can be perceived as having a version for self-use or testing purposes, whereas the Marketplace Function is for other developers to purchase.
 
-# **Account Function**
+# Account Function
 
 An Account Function can exist in deployed or un-deployed state. Additionally, the deployed Function can either be Public or Private.
 
 Both Public and Private functions are billed to the owner/publisher. However, once deployed, public functions can be invoked without any identity information, whereas private functions can only be invoked by the owner and authorized users.
 
-# **Marketplace Function**
+# Marketplace Function
 
 A Marketplace Function can be acquired for free or with a price/subscription.
 
